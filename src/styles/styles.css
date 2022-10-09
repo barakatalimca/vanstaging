@@ -1,0 +1,497 @@
+@import './styles.ar.css';
+a {
+  text-decoration: none;
+  cursor: pointer
+}
+button:disabled{
+  cursor: not-allowed !important;
+}
+body{
+  background-color: transparent !important;
+  position: relative;
+  overflow-x: hidden;
+}
+.breadcrumb {
+  margin: 2rem 0 !important;
+  width: 100%;
+}
+a{
+  color: #000;
+}
+button:focus{
+  outline: none;
+}
+.breadcrumb a {
+  text-decoration: none;
+  color: black;
+}
+.breadcrumb p {
+  color: #f26b3e;
+}
+/* PRODUCT DETAIL IMAGE SCROLLER */
+.element {
+  height: 100vh;
+  /* background-color: #ededed; */
+  /* border-top: 1px solid #000; */
+  border-bottom: 10px solid #fff;
+}
+.element:last-child{
+  border-bottom: none;
+}
+.element img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.imageScrollerNav{
+  position: sticky;
+  top: 78px;
+}
+.imageScrollerNav ul{
+  margin: 0;
+  padding-left: 0;
+}
+.imageScrollerNav ul li{
+  display: block;
+  height: 99px;
+  margin-bottom: 14px;
+  width: calc(100% - 14px);
+  border: none;
+  /* border-bottom: 1.1px solid #ddd; */
+  
+}
+.imageScrollerNav ul li img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  cursor: pointer;
+}
+.element.no-padding {
+  padding-top: 0;
+}
+
+.imageScrollerNav .active img{
+  opacity: 1;
+}
+/* PRODUCT DETAIL IMAGE SCROLLER *END*/
+button {
+  /* border-radius: 0 !important; */
+  /* font-size: 13px !important; */
+}
+.newsletter :-ms-input-placeholder{
+  color: #fff;
+}
+.newsletter input:focus{
+  border-color: #fff;
+}
+header{
+  padding: 0px 0;
+}
+header a{
+  color: #fff;
+}
+.bg-transparent, header{
+  background: transparent !important;
+  box-shadow: none !important;
+}
+.bg-transparent span{
+  color: #fff !important;
+}
+.bg-white, .notHome{
+  background: #fff !important;
+  /* box-shadow: 0px 2px 4px -1px rgba(0,0,0,0.2), 0px 4px 5px 0px rgba(0,0,0,0.14), 0px 1px 10px 0px rgba(0,0,0,0.12) !important; */
+}
+.bg-white a, .bg-white span, .notHome a, .notHome span {
+  color: #000 !important;
+}
+/* .bg-white a {
+  color: inherit;
+} */
+ header.notHome ul li {
+  color: #000 !important;
+}
+
+/* .logoLink img:last-child{
+  display: none;
+}
+.bg-white .logoLink img:last-child{
+  display: block;
+}
+.bg-white .logoLink img:first-child{
+  display: none;
+}
+.bg-transparent .logoLink img:first-child{
+  display: block;
+} */
+.logoLink{
+  text-decoration: none;
+}
+
+.NavDropDown{
+  /* box-shadow: 0 10vh 100vh -1vh #444; */
+  box-shadow: 0 50px 90px -7vh #444;
+  display: none;
+  position: fixed;
+  background-color: #fff;
+  left: 0;
+  width: 100%;
+  top: 74px;
+  color: #000;
+  transition: all 0.02s ease-in-out;
+}
+.NavDropDown section a{
+  color: #000 !important;
+  cursor: pointer;
+  display: block !important;
+  font-weight: normal;
+  height: 35px !important;
+  line-height: 35px !important;
+  margin: 2px 0;
+  text-align: left;
+  width: 100%;
+}
+header ul{
+  margin: 0;
+}
+.dropdown:hover > .NavDropDown{
+  display: block;
+}
+.NavDropDown div img{
+  width: 100%;
+  border-radius: 4px;
+  height: 250px;
+  object-fit: cover;
+}
+.CategoriesMenu div img{
+  width: 65px;
+  border-radius: 4px;
+  height: 65px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.CategoriesMenu div h6 {
+  font-size: 13px;
+  color: #000;
+  margin-top: 0;
+  font-weight: bold;
+  padding-left: 15px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+.CategoriesMenu ul{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.CategoriesMenu ul li{
+  display: inline-block;
+  width: 16rem;
+}
+.HomeThirdSectionSlider{
+  position: relative;
+}
+.HomeThirdSectionImageContainer span{
+  position: relative;
+  display: block;
+  /* border: '20px solid #eee', */
+}
+.HomeThirdSectionSlider .tabContainer{
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+}
+.HomeThirdSectionImageContainer span img{
+  position: relative;
+}
+.HomeThirdSectionImageContainer span::before{
+  content: '';
+  background-color: #eee;
+  width: 250px;
+  position: absolute;
+  height: 195px;
+  top: -80px;
+  left: 0;
+}
+.HomeThirdSectionSlider:before{
+  content: '';
+  background-color: #eee;
+  height: 62%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+.HomeThirdSectionSlider:after{
+  content: '';
+  background-color: #fff;
+}
+.HomeThirdSectionSlider .MuiTabs-flexContainer{
+  justify-content: center;
+}
+
+.tabContainer button{
+  min-height: 65px;
+}
+.tabContainer  button span:first-child{
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.signInSignUpBox{
+  /* text-align: center; */
+}
+.facebookLogin{
+  background-color: #405A9A !important;
+  color: #fff !important;
+  padding: 16px !important;
+  width: 100%;
+}
+.socialLogin > div > div{
+  width: 70%;
+}
+.socialLogin{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.socialLogin button{
+  box-shadow: 0 7px 15px rgba(0,0,0,.15) !important;
+  margin-bottom: 16px;
+}
+.googleLogin{
+  background-color: #fff !important;
+  color: #000 !important;
+  padding: 16px !important;
+  width: 100%;
+}
+.signInSignUpBox div button{
+  padding: 18.5px 14px;
+  width: 100%;
+}
+textarea{
+  padding: 15px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.statusContainer span{
+  text-transform: capitalize;
+  font-weight: bold;
+  position: relative;
+  padding-left: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.statusContainer span:before{
+  content: '';
+  position: relative;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-right: 7px;
+  background-color: #000;
+}
+.statusContainer .delivered:before{
+  content: '';
+  background-color: green;
+}
+.statusContainer .cancelled:before{
+  content: '';
+  background-color: red;
+}
+.statusContainer .ordered:before{
+  content: '';
+  background-color: gray;
+}
+.statusContainer .returned:before{
+  content: '';
+  background-color: orange;
+}
+.stepper{
+  width: 500px;
+}
+.stepper b{
+  font-size: 12px;
+  margin-top: 4px;
+}
+.stepper span{
+  align-items: end;
+  text-align: left !important;
+}
+.stepper div> span{
+  margin-bottom: 5px;
+}
+.stepper > div > div{
+  padding: 0;
+}
+.profileDropdDown{
+  width: 200px;
+  left: auto;
+  right: 0;
+  top: 68px;
+  position: absolute;
+  text-align: center;
+}
+.profileDropdDown a{
+  display: block;
+  width: 100% !important;
+  font-size: 13px !important;
+  padding: 7px;
+  color: #000 !important;
+  text-align: left !important;
+}
+.MuiTimelineItem-missingOppositeContent:before{
+  content: none !important;
+}
+.ratingContainer fieldset{
+  padding: 0;
+}
+.MuiStepper-root{
+  padding:0 !important;
+}
+.timeline:last-child > div:first-child > span:last-child{
+  display: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+video{
+  object-fit: cover;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.ribbon {
+  padding: 0 0 10px 0;
+  position: absolute;
+  left: 1.25em;
+  top: -0.25em;
+  width: 40px;
+}
+.ribbon div {
+  background: #bb3a34;
+  background: linear-gradient(#e74841 0%, #bb3a34 100%);
+  color: #fff;
+  padding: 1em 0;
+  text-align: center;
+  text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.5);
+}
+.ribbon div:after {
+  border-left: 20px solid #bb3a34;
+  border-right: 20px solid #bb3a34;
+  border-bottom: 10px solid transparent;
+  bottom: 0;
+  content: '';
+  height: 0;
+  left: 0;
+  position: absolute;
+  width: 0;
+}
+#hyperpay{
+ direction: ltr !important;
+}
+div:focus{
+  outline: none;
+}
+.preview_icon img{
+  border-radius: 50%;
+}
+.preview_icon img {
+  max-width: 50px !important;
+  max-height: 50px !important;
+}
+@media only screen and (max-width: 767px) {
+  html, body, #___gatsby{
+    overflow-x: hidden;
+  }
+  #bot-container *{
+    left: 0;
+    right: auto;
+    bottom: 70px;
+  }
+  .carousel{
+    direction: ltr;
+  }
+  #hyperpay{
+    padding: 0 25px;
+  }
+  .MuiButton-root:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+  header{
+    position: absolute !important;
+    height: 78px;
+  }
+  .CategoriesMenu div{
+    display: block;
+    text-align: center;
+    min-width: 30vw;
+  }
+  .CategoriesMenu div h6{
+    padding-left: 0;
+  }
+  header img{
+    margin-top: 20px;
+  }
+  .logoLink img{
+    margin-top: 6px;
+  }
+  .reviewsContent{
+    display: block;
+  }
+  .reviewsContent div{
+    display: block;
+  }
+  .reviewsContent b{
+    display: inline-flex;
+  }
+   header div.MuiGrid-grid-xs-true{
+    flex-basis: 100%;
+    text-align: center;
+   }
+  .bg-white button, .notHome button{
+    color: #000 !important;
+  }
+  .HomeThirdSectionSlider .carousel__slider{
+    height: 280vh !important;
+  }
+  .HomeThirdSectionSlider  img{
+    width: 100% !important;
+  }
+  .HomeThirdSectionSlider .MuiBox-root{
+    padding-right: 0;
+    padding-left: 0;
+  }
+  .HomeThirdSectionSlider .tabContainer .MuiTabs-scrollable{
+    padding-left: 170px;
+  }
+  .HomeThirdSectionSlider button{
+    margin-bottom: 25px;
+  }
+  .HomeThirdSectionSlider .rsm--carousel__actions{
+    justify-content: space-between !important;
+  }
+  .HomeThirdSectionSlider .carousel__inner{
+    height: 280vh !important;
+  }
+  .HomeThirdSectionSlider *{
+    justify-content: center !important;
+    align-items: center;
+  }
+  .signInSignUpBox, .socialLogin > div > div{
+    width: 100%;
+  }
+  .socialLogin{
+    margin-bottom: 25px !important;
+    margin-top: 25px !important;
+  }
+}
+.carousel__slide-focus-ring{
+  display: none !important;
+}

@@ -1,0 +1,36 @@
+[class^="HeaderNavigation-item"], header nav  ul >li {
+  text-align: center;
+  transition: all 0.02s ease-in-out;
+  position: relative;
+}
+/* [class^="HeaderNavigation-item"]:before, [class^="HeaderNavigation-item"]:after */
+header nav  ul >li:before,header nav ul >li:after
+ {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 0px;
+  height: 3px;
+  margin: 3px 0 0;
+  transition: all 0.02s ease-in-out;
+  transition-duration: 0.25s;
+  opacity: 0;
+  background-color: #000;
+}
+[class^="HeaderNavigation-item"]:before, header nav  ul >li:before {
+  left: 50%;
+}
+[class^="HeaderNavigation-item"]:after, header nav ul >li:after {
+  right: 50%;
+}
+[class^="HeaderNavigation-item"]:hover {
+  cursor: pointer;
+}
+[class^="HeaderNavigation-item"]:hover:before, [class^="HeaderNavigation-item"]:hover:after, header nav  ul >li:hover:before,header nav ul >li:hover:after {
+  /* width: 100%; */
+  opacity: 1;
+}
+[class^="HeaderNavigation-item"]:hover:before, [class^="HeaderNavigation-item"]:hover:after, header nav  ul >li:before,header nav ul >li:after {
+  width: 50%;
+}
+  

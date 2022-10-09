@@ -1,0 +1,111 @@
+:root[lang='ar'] {
+  direction: rtl;
+}
+:root[lang='ar'] *{
+  /* font-family: Cairo !important; */
+  font-family: sans-serif !important;
+  /* font-size: 102%; */
+}
+:root[lang='ar'] .MuiFormControlLabel-root{
+  margin-right: 0;
+}
+:root[lang='ar'] .carousel li{
+  direction: rtl;
+}
+:root[lang='ar'] .sectionTopCategories p,
+:root[lang='ar'] .sectionTopCategories h6, 
+:root[lang='ar'] footer nav a,
+:root[lang='ar'] .NavDropDown section a{
+  text-align: right;
+}
+:root[lang='ar'] .sectionTopCategories a{
+  float: right;
+}
+:root[lang='ar'] .orderList img{
+  margin-left: 16px;
+}
+:root[lang='ar'] .searchItem > div > div:last-child{
+  margin-right: 16px;
+}
+:root[lang='ar'] .parallaxImageUpperLayerContainer{
+  left: auto !important;
+  right: -200px !important;
+}
+:root[lang='ar'] .imageScrollerNav ul{
+  padding: 0;
+}
+:root[lang='ar'] .CategoriesMenu div img{
+  margin-left: 10px;
+}
+:root[lang='ar'] .NavDropDown div h6,:root[lang='ar'] .CategoriesMenu div h6{
+  letter-spacing: 0;
+}
+:root[lang='ar'] .MuiButton-startIcon {
+  margin-left: 10px;
+  margin-right: 0;
+}
+:root[lang='ar'] .cartList img{
+  margin-left: 16px;
+}
+/* :root[lang='ar'] .cartList a{
+  margin-right: 16px;
+} */
+:root[lang='ar'] .carousel__back-button{
+  left: 0;
+}
+:root[lang='ar'] .carousel__slider{
+  direction: ltr;
+}
+:root[lang='ar'] .MuiButtonBase-root{
+  left: 0;
+  right: auto;
+}
+:root[lang='ar'] header .MuiButtonBase-root{
+  right: 0;
+  left: auto;
+}
+:root[lang='ar'] .ribbon{
+  left: auto;
+  right: 1.25em;
+}
+/* :root[lang='ar'] .MuiInputLabel-filled.MuiInputLabel-shrink,:root[lang='ar'] .MuiInputLabel-outlined.MuiInputLabel-shrink {
+  right: 0;
+  transform: translate(130px, 6px) scale(0.75);
+  width: 100%;
+} */
+.MuiStepper-alternativeLabel{
+  direction: ltr;
+}
+:root[lang='ar'] .MuiSelect-filled.MuiSelect-filled {
+    padding-right: 15px;
+}
+:root[lang='ar'] .MuiSelect-iconFilled {
+  left: 7px;
+  right: auto;
+}
+:root[lang='ar'] .MuiOutlinedInput-adornedEnd{
+  padding-left: 14px;
+  direction: ltr;
+}
+:root[lang='ar'] .searchItem{
+  direction: rtl;
+}
+:root[lang='ar'] .MuiSnackbarContent-action{
+  margin-left: 0;
+}
+:root[lang='ar'] .MuiSnackbarContent-root{
+  justify-content: space-between;
+}
+:root[lang='ar'] .MuiTabs-flexContainer{
+  flex-direction: row-reverse;
+}
+:root[lang='ar'] .MuiTabs-indicator{
+  right: 0 !important;
+}
+:root[lang='ar'] .MuiStepper-horizontal {
+  flex-direction: row-reverse;
+}
+:root[lang='ar'] .MuiStepConnector-alternativeLabel {
+  right: calc(-50% + 20px);
+  left: calc(50% + 20px);
+}
